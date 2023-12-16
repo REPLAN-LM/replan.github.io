@@ -1,47 +1,53 @@
 <html>
-<head>
-  <!-- <meta charset="utf-8">
+  <head>
+    <!-- <meta charset="utf-8">
   <meta name="description"
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <title>REPLANNING WITH PERCEPTION AND LANGUAGE MODELS</title>
+    <title>REPLANNING WITH PERCEPTION AND LANGUAGE MODELS</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-    gtag('js', new Date());
+      gtag("js", new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+      gtag("config", "G-PYVRSFMDRL");
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.svg" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
-</head>
-<body>
-
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -81,21 +87,20 @@
   </div>
 </nav> -->
 
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                REPLANNING WITH PERCEPTION AND LANGUAGE MODELS
+              </h1>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">REPLANNING WITH PERCEPTION AND LANGUAGE MODELS</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"> Anonymous Authors </span>
+              </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Anonymous Authors
-            </span>
-          </div>
-
-<!--           <div class="column has-text-centered">
+              <!--           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
@@ -142,343 +147,381 @@
                   <span>Data</span>
                   </a>
             </div> -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
-
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- -->
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Advancements in large language models (LLMs) have demonstrated their potential in facilitating high-level reasoning, logical reasoning and robotics planning. Recently, LLMs have also been able to generate reward functions for low-level robot actions, effectively bridging the interface between high-level planning and low-level robot control.
-          </p>
-          <p>
-            We present a novel framework: Replanning with Perception and Language Models that enables real-time replanning capabilities for long-horizon tasks. This framework utilizes the physical grounding provided by a VLM's understanding of the world's state to adapt robot actions when the initial plan fails to achieve the desired goal. We test our approach within two long-horizon task domains, a wooden cabinet puzzle and a larger-scale kitchen environment. We find that RePlan enables a robot to successfully adapt to unforeseen obstacles while accomplishing open-ended, long-horizon goals, where baseline models cannot.
-          </p>
-          
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3" style="margin-top: 30px;">Experiment 1: Cabinet</h2>
-        <div style="display: flex; align-items: center; justify-content: space-around;">
-          <div style="flex: 3; padding: 10px;">
-            <img src="static/images/2023-10-21_16-09.png" class="CENy8b" role="img" style="width: 100%;">
-          </div>
-          <div style="flex: 1; padding: 10px;">
-            <iframe width="301" height="240" src="https://www.youtube.com/embed/mgqR-vLsH0E" title="RePlan: Cabinet Environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-        <h2 class="title is-3" style="margin-top: 30px;">Experiment 2: Kitchen</h2>
-        <div style="display: flex; align-items: center; justify-content: space-around;">
-          <div style="flex: 1; padding: 10px;">
-            <iframe width="301" height="204" src="https://www.youtube.com/embed/3SETp8o-yY8" title="RePlan: Kitchen Environment" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div style="flex: 2; padding: 10px;">
-            <img src="static/images/media2.png" class="CENy8b" role="img" style="width: 100%;">
-          </div>
-        </div>
-        <h2 class="title is-3" style="margin-top: 30px;">Other experiments</h2>
-        <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
-          <!-- Video item 1 -->
-          <div class="flex: 1;">
-            <iframe width="237" height="176" src="https://www.youtube.com/embed/m89y88P6yDw" title="Replan: Blocks Environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="video-description"> Yellow cube into yellow plate</div>
-          </div>
-
-          <!-- Video item 2 -->
-          <div class="flex: 1;">
-            <iframe width="237" height="176" src="https://www.youtube.com/embed/PkdY1JxkI2M" title="Replan: Blocking Block Environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="video-description">Place the red cube on the crate</div>
-          </div>
-
-          <!-- Video item 3 -->
-          <div class="flex: 1;">
-            <iframe width="237" height="176" src="https://www.youtube.com/embed/wYaJgjlooWE" title="Replan: Locked Cabinet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="video-description">Find the blue cube</div>
-          </div>
-        </div>
-
-        <h2 class="title is-3" style="margin-top: 30px;">Experiment 4: Long Horizon</h2>
-        <iframe width="366" height="248" src="https://www.youtube.com/embed/gAgugVfK2XM" title="RePlan: Long Horizon Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h2 class="title is-3" style="margin-top: 30px;">Result</h2>
-        <p style="text-align: left;">
-          We compare our method to the Language to Rewards framework, a one-shot, in-context learning agent.  Language to Rewards uses a Reward Translator to translate a high-level goal (such as "open the drawer") to low-level reward functions that are used by a Motion Controller to instruct a robot on what to do. While Language to Rewards does not utilize a VLM to perceive the scene, we give it access to the same objects as our model identifies at the start of the scene.
-        </p>
-        <br/>
-        <p style="text-align: left;">
-          To demonstrate the importance of all the modules in our pipeline, we do an ablation study on how well the robot can perform each task without a specific module. We systematically remove the following modules: VLM Perceiver, LLM Verifier, and replanning capabilities of High-Level Planner.
-        </p>
-        <br/>
-        <img src="static/images/media.png" class="CENy8b" role="img" style="width: 100%;">
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-<!--     <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+      </div>
+    </section>
 
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Advancements in large language models (LLMs) have demonstrated
+                their potential in facilitating high-level reasoning, logical
+                reasoning and robotics planning. Recently, LLMs have also been
+                able to generate reward functions for low-level robot actions,
+                effectively bridging the interface between high-level planning
+                and low-level robot control.
+              </p>
+              <p>
+                We present a novel framework: Replanning with Perception and
+                Language Models that enables real-time replanning capabilities
+                for long-horizon tasks. This framework utilizes the physical
+                grounding provided by a VLM's understanding of the world's state
+                to adapt robot actions when the initial plan fails to achieve
+                the desired goal. We test our approach within two long-horizon
+                task domains, a wooden cabinet puzzle and a larger-scale kitchen
+                environment. We find that RePlan enables a robot to successfully
+                adapt to unforeseen obstacles while accomplishing open-ended,
+                long-horizon goals, where baseline models cannot.
+              </p>
+            </div>
+          </div>
         </div>
+        <!--/ Abstract. -->
+
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3" style="margin-top: 30px">
+              Experiment 1: Cabinet
+            </h2>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+              "
+            >
+              <div style="flex: 3; padding: 10px">
+                <img
+                  id="interactiveImage1"
+                  src="static/images/2023-10-21_16-09.png"
+                  usemap="#videomap"
+                  class="CENy8b"
+                  role="img"
+                  style="width: 100%"
+                />
+                <div
+                  id="hoverOverlay1"
+                  style="
+                    position: absolute;
+                    top: 480px;
+                    left: 0;
+                    height: 250px;
+                    background-color: rgba(0, 255, 0, 0);
+                    pointer-events: none;
+                  "
+                ></div>
+              </div>
+              <div style="flex: 1; padding: 10px">
+                <iframe
+                  id="videoFrame1"
+                  width="301"
+                  height="240"
+                  src="https://www.youtube.com/embed/mgqR-vLsH0E"
+                  title="RePlan: Cabinet Environment"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <h2 class="title is-3" style="margin-top: 30px">
+              Experiment 2: Kitchen
+            </h2>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+              "
+            >
+              <div style="flex: 1; padding: 10px">
+                <iframe
+                  id="videoFrame2"
+                  width="301"
+                  height="204"
+                  src="https://www.youtube.com/embed/3SETp8o-yY8"
+                  title="RePlan: Kitchen Environment"
+                  frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div style="flex: 2; padding: 10px">
+                <img
+                  id="interactiveImage2"
+                  src="static/images/media2.png"
+                  class="CENy8b"
+                  role="img"
+                  style="width: 100%"
+                />
+                <div
+                  id="hoverOverlay2"
+                  style="
+                    position: absolute;
+                    top: 680px;
+                    left: 0;
+                    height: 100%;
+                    background-color: rgba(0, 255, 0, 0);
+                    pointer-events: none;
+                  "
+                ></div>
+              </div>
+            </div>
+            <h2 class="title is-3" style="margin-top: 30px">
+              Other experiments
+            </h2>
+
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+              "
+            >
+              <!-- Video item 1 -->
+              <div style="flex: 1; padding: 10px">
+                <iframe
+                  width="237"
+                  height="176"
+                  src="https://www.youtube.com/embed/m89y88P6yDw"
+                  title="Replan: Blocks Environment"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <div class="video-description">
+                  Yellow cube into yellow plate
+                </div>
+              </div>
+
+              <!-- Video item 2 -->
+              <div style="flex: 1; padding: 10px">
+                <iframe
+                  width="237"
+                  height="176"
+                  src="https://www.youtube.com/embed/PkdY1JxkI2M"
+                  title="Replan: Blocking Block Environment"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <div class="video-description">
+                  Place the red cube on the crate
+                </div>
+              </div>
+
+              <!-- Video item 3 -->
+              <div style="flex: 1; padding: 10px">
+                <iframe
+                  width="237"
+                  height="176"
+                  src="https://www.youtube.com/embed/wYaJgjlooWE"
+                  title="Replan: Locked Cabinet"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <div class="video-description">Find the blue cube</div>
+              </div>
+            </div>
+
+            <h2 class="title is-3" style="margin-top: 30px">
+              Experiment 4: Long Horizon
+            </h2>
+            <iframe
+              width="366"
+              height="248"
+              src="https://www.youtube.com/embed/gAgugVfK2XM"
+              title="RePlan: Long Horizon Task"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h2 class="title is-3" style="margin-top: 30px">Result</h2>
+            <p style="text-align: left">
+              We compare our method to the Language to Rewards framework, a
+              one-shot, in-context learning agent. Language to Rewards uses a
+              Reward Translator to translate a high-level goal (such as "open
+              the drawer") to low-level reward functions that are used by a
+              Motion Controller to instruct a robot on what to do. While
+              Language to Rewards does not utilize a VLM to perceive the scene,
+              we give it access to the same objects as our model identifies at
+              the start of the scene.
+            </p>
+            <br />
+            <p style="text-align: left">
+              To demonstrate the importance of all the modules in our pipeline,
+              we do an ablation study on how well the robot can perform each
+              task without a specific module. We systematically remove the
+              following modules: VLM Perceiver, LLM Verifier, and replanning
+              capabilities of High-Level Planner.
+            </p>
+            <br />
+            <img
+              src="static/images/media.png"
+              class="CENy8b"
+              role="img"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <!--/ Paper video. -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
         <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
+          <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a
+            class="icon-link"
+            href="https://github.com/keunhong"
+            class="external-link"
+            disabled
+          >
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-
-      </div>
-    </div> -->
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-<!--     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+              <p>
+                This means you are free to borrow the
+                <a href="https://github.com/nerfies/nerfies.github.io"
+                  >source code</a
+                >
+                of this website, we just ask that you link back to this page in
+                the footer. Please remember to remove the analytics code
+                included in the header of the website which you do not want on
+                your website.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
-
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section> -->
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // document
+    //   .getElementById("interactiveImage1")
+    //   .addEventListener("mousemove", function (event) {
+    //     var xPosition = event.offsetX; // Get the horizontal coordinate of the mouse
+    //     var imageWidth = this.offsetWidth; // Get the width of the image
+    //     var segmentWidth = imageWidth / 6; // Since the image is split into 6 parts
+    //     var hoverOverlay = document.getElementById("hoverOverlay1");
+    //     var image = document.getElementById("interactiveImage1");
+    //     var rect = image.getBoundingClientRect();
+    //     var imageStartX = rect.left + window.scrollX;
+
+    //     // Calculate the index of the segment the mouse is over
+    //     var segmentIndex = Math.floor(xPosition / segmentWidth);
+    //     console.log(segmentIndex);
+
+    //     // Position the hover overlay
+    //     hoverOverlay.style.width = segmentWidth + "px";
+    //     hoverOverlay.style.left =
+    //       segmentIndex * segmentWidth + imageStartX - 55 + "px";
+    //   });
+    document
+      .getElementById("interactiveImage1")
+      .addEventListener("click", function (event) {
+        var xPosition = event.offsetX; // Get the horizontal coordinate of the click
+        var imageWidth = this.offsetWidth; // Get the width of the image
+
+        // Calculate the percentage of the click position relative to the image width
+        var percentage = (xPosition / imageWidth) * 100;
+
+        // Determine the timestamp based on the percentage
+        // Adjust these conditions based on how you want to divide the clickable areas
+        var timestamp;
+        var timestep = 16.6666;
+        const timestamps = [0.0, 12, 161, 190, 190, 220];
+        for (var i = 0; i < 6; i++) {
+          if (percentage < timestep * (i + 1)) {
+            timestamp = timestamps[i];
+            break;
+          }
+        }
+        // Update the iframe src to include the timestamp
+        var iframe = document.getElementById("videoFrame1");
+        iframe.src =
+          "https://www.youtube.com/embed/mgqR-vLsH0E?start=" +
+          timestamp +
+          "&autoplay=1";
+        console.log(iframe.src);
+      });
+    // document
+    //   .getElementById("interactiveImage2")
+    //   .addEventListener("mousemove", function (event) {
+    //     var xPosition = event.offsetX; // Get the horizontal coordinate of the mouse
+    //     var imageWidth = this.offsetWidth; // Get the width of the image
+    //     var segmentWidth = imageWidth / 6; // Since the image is split into 6 parts
+    //     var hoverOverlay = document.getElementById("hoverOverlay2");
+    //     var image = document.getElementById("interactiveImage2");
+    //     var rect = image.getBoundingClientRect();
+    //     var imageStartX = rect.left + window.scrollX;
+
+    //     // Calculate the index of the segment the mouse is over
+    //     var segmentIndex = Math.floor(xPosition / segmentWidth);
+    //     console.log(segmentIndex);
+
+    //     // Position the hover overlay
+    //     hoverOverlay.style.width = segmentWidth + "px";
+    //     hoverOverlay.style.left =
+    //       segmentIndex * segmentWidth + imageStartX - 55 + "px";
+    //   });
+    document
+      .getElementById("interactiveImage2")
+      .addEventListener("click", function (event) {
+        var xPosition = event.offsetX; // Get the horizontal coordinate of the click
+        var imageWidth = this.offsetWidth; // Get the width of the image
+
+        console.log(xPosition);
+        // Calculate the percentage of the click position relative to the image width
+        var percentage = (xPosition / imageWidth) * 100;
+
+        console.log(percentage);
+        // Determine the timestamp based on the percentage
+        // Adjust these conditions based on how you want to divide the clickable areas
+        var timestep = 14.28571428;
+        const timestamps = [0.0, 112, 117, 197, 215, 240, 240];
+        for (var i = 0; i < 6; i++) {
+          if (percentage < timestep * (i + 1)) {
+            timestamp = timestamps[i];
+            break;
+          }
+        }
+        // Update the iframe src to include the timestamp
+        var iframe = document.getElementById("videoFrame2");
+        iframe.src =
+          "https://www.youtube.com/embed/3SETp8o-yY8?start=" +
+          timestamp +
+          "&autoplay=1";
+        console.log(iframe.src);
+      });
+  });
+</script>
